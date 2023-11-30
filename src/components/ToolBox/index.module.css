@@ -1,0 +1,29 @@
+.toolboxContainer {
+  @apply p-5 absolute top-1/4 left-5 w-64 rounded-md shadow-neutral-300 border border-neutral-300;
+
+  .toolItem {
+    @apply mb-5;
+
+    .toolText {
+      @apply text-black text-lg;
+    }
+
+    .itemContainer {
+      @apply flex justify-between mt-2;
+
+      .colorBox {
+        @apply h-5 w-5 mr-1 rounded-sm cursor-pointer;
+        &.active {
+          @apply border-2 border-neutral-700 shadow-neutral-300;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    top: unset;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+  }
+}

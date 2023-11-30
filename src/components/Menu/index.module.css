@@ -1,0 +1,14 @@
+.menuContainer {
+  @apply absolute px-5 py-1 flex justify-between w-1/4 left-1/2 top-10 rounded-md -translate-x-1/2 border border-neutral-300;
+
+  .iconWrapper {
+    @apply cursor-pointer flex justify-center items-center h-10 w-10 hover:bg-neutral-500 hover:bg-opacity-30 rounded-md;
+
+    &.active {
+      background-color: rgba(128, 0, 128, 0.3);
+    }
+    &:disabled {
+      opacity: 0.4;
+    }
+  }
+}
